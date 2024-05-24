@@ -1,0 +1,35 @@
+/* Navbar.css */
+
+/* Estilos para el fondo y la altura del navbar */
+.navbar {
+    background-color: #1976d2;
+    /* Color de fondo */
+    height: 64px;
+    /* Altura del navbar */
+}
+
+/* Estilos para el título */
+.navbar-title {
+    margin-left: 20px;
+    /* Margen izquierdo para separar del borde */
+    color: white;
+    /* Color del texto */
+    font-size: 24px;
+    /* Tamaño de fuente */
+    font-weight: bold;
+    /* Negrita */
+}
+
+/* Estilos para los botones */
+.navbar-button {
+    color: white;
+    /* Color del texto */
+    margin-right: 10px;
+    /* Margen derecho entre botones */
+}
+
+/* Estilos para los botones al pasar el ratón */
+.navbar-button:hover {
+    background-color: #1565c0;
+    /* Cambia el color de fondo al pasar el ratón */
+}

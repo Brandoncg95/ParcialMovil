@@ -1,0 +1,56 @@
+{
+    "epocas": [
+        {
+            "nombre": "Renacimiento",
+            "periodo": {
+                "inicio": "1400",
+                "fin": "1600"
+            },
+            "generos": [
+                "Madrigal",
+                "Chanson"
+            ]
+        }
+    ],
+    "generos": [
+        {
+            "nombre": "Madrigal",
+            "caracteristicas": "Polifónico",
+            "origenes": "Italia",
+            "musicos": [
+                "Luca Marenzio"
+            ],
+            "instrumentos": [
+                "Lute"
+            ]
+        }
+    ],
+    "musicos": [
+        {
+            "nombre": "Luca Marenzio",
+            "fechaNacimiento": "1553",
+            "fechaMuerte": "1599",
+            "historia": "Italian composer"
+        }
+    ],
+    "instrumentos": [
+        {
+            "nombre": "Lute",
+            "foto": "/path/to/lute.jpg",
+            "lugarCreacion": "Europe",
+            "creador": "Unknown",
+            "tipo": "Cuerda pulsada",
+            "materiales": "Madera"
+        }
+    ],
+    "obras": [
+        {
+            "nombre": "As Vesta Was",
+            "anoCreacion": "1601",
+            "musicosAutores": [
+                "Thomas Weelkes"
+            ],
+            "partitura": "path/to/score.pdf"
+        }
+    ]
+}

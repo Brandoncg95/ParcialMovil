@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { Container } from '@mui/material';
+import Navbar from './Componentes/Navbar'; 
+import Epocas from './Pages/Epocas';
+import Generos from './Pages/Generos';
+import Musicos from './Pages/Musicos';
+import Instrumentos from './Pages/Instrumentos';
+import Obras from './Pages/Obras';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar /> 
+      <Container>
+        <Routes>
+          <Route path="/epocas" element={<Epocas />} />
+          <Route path="/generos" element={<Generos />} />
+          <Route path="/musicos" element={<Musicos />} />
+          <Route path="/instrumentos" element={<Instrumentos />} />
+          <Route path="/obras" element={<Obras />} />
+        </Routes>
+      </Container>
     </div>
   );
 }
