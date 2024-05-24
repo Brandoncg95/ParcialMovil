@@ -5,7 +5,7 @@ const Epocas = () => {
     const [epocas, setEpocas] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/epocas')
+        fetch('http://localhost:3000/epocas')
             .then(response => response.json())
             .then(data => setEpocas(data));
     }, []);
