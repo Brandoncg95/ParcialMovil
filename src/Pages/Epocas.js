@@ -5,15 +5,16 @@ const Epocas = () => {
     const [epocas, setEpocas] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/epocas')
+        fetch('http://localhost:3000/epocas') // Cambiar la URL a la que apunta al servidor de tu compañero
             .then(response => response.json())
-            .then(data => setEpocas(data));
+            .then(data => setEpocas(data))
+            .catch(error => console.error('Error fetching data:', error));
     }, []);
-
+    
     return (
-        <div>
-            {epocas.map(epoca => (
-                <Epoca key={epoca.nombre} {...epoca} />
+        <div className="epoca-container">
+            {epocas.map((epoca, index) => (
+                <Epoca key={index} {...epoca} />
             ))}
         </div>
     );

@@ -1,4 +1,8 @@
-.instrumento-musical-card {
-    margin: 20px;
-    padding: 20px;
+/* InstrumentoMusical.css */
+.instrumento-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
 }
+
+/* Otras páginas CSS si es necesario */

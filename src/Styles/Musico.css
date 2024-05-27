@@ -1,4 +1,6 @@
-.musico-card {
-    margin: 20px;
-    padding: 20px;
+/* Musico.css */
+.musico-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
 }

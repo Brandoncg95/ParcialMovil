@@ -42,3 +42,51 @@ app.get('/epocas', (req, res) => {
       res.json(result);
     });
   });
+
+  // Obtener todos los registros de la tabla generos
+app.get('/generos', (req, res) => {
+  const sql = 'SELECT * FROM generos';
+  db.query(sql, (err, result) => {
+    if (err) {
+      res.status(500).send('Error al obtener registros de la base de datos');
+      throw err;
+    }
+    res.json(result);
+  });
+});
+
+// Obtener todos los registros de la tabla musicos
+app.get('/musicos', (req, res) => {
+  const sql = 'SELECT * FROM musicos';
+  db.query(sql, (err, result) => {
+    if (err) {
+      res.status(500).send('Error al obtener registros de la base de datos');
+      throw err;
+    }
+    res.json(result);
+  });
+});
+
+// Obtener todos los registros de la tabla instrumentos
+app.get('/instrumentos', (req, res) => {
+  const sql = 'SELECT * FROM instrumentos';
+  db.query(sql, (err, result) => {
+    if (err) {
+      res.status(500).send('Error al obtener registros de la base de datos');
+      throw err;
+    }
+    res.json(result);
+  });
+});
+
+// Obtener todos los registros de la tabla obras
+app.get('/obras', (req, res) => {
+  const sql = 'SELECT * FROM obras';
+  db.query(sql, (err, result) => {
+    if (err) {
+      res.status(500).send('Error al obtener registros de la base de datos');
+      throw err;
+    }
+    res.json(result);
+  });
+});

@@ -30,5 +30,25 @@
         "generos": [
             "Música clásica"
         ]
+    },
+    {
+        "nombre": "Regueton",
+        "periodo": {
+            "inicio": "1995",
+            "fin": "2003"
+        },
+        "generos": [
+            "Música Romantica"
+        ]
+    },
+    {
+        "nombre": "Bad Bunnu",
+        "periodo": {
+            "inicio": "2024",
+            "fin": "2024"
+        },
+        "generos": [
+            "Música Clasica"
+        ]
     }
 ]

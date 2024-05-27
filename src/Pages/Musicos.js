@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Musico from '../Componentes/Musico';
+import '../Styles/Musico.css'; 
 
 const Musicos = () => {
     const [musicos, setMusicos] = useState([]);
@@ -7,7 +8,8 @@ const Musicos = () => {
     useEffect(() => {
         fetch('http://localhost:5000/musicos')
             .then(response => response.json())
-            .then(data => setMusicos(data));
+            .then(data => setMusicos(data))
+            .catch(error => console.error('Error fetching data:', error));
     }, []);
 
     return (
