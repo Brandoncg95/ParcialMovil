@@ -6,7 +6,7 @@ const Obras = () => {
     const [obras, setObras] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/obras')
+        fetch('http://localhost:3000/obras')
             .then(response => response.json())
             .then(data => setObras(data))
             .catch(error => console.error('Error fetching data:', error));

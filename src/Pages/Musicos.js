@@ -6,7 +6,7 @@ const Musicos = () => {
     const [musicos, setMusicos] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/musicos')
+        fetch('http://localhost:3000/musicos')
             .then(response => response.json())
             .then(data => setMusicos(data))
             .catch(error => console.error('Error fetching data:', error));

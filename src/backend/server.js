@@ -27,7 +27,7 @@ db.connect((err) => {
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-  console.log("Conectado con exito oyendo por el puero"+ {PORT});
+  console.log("Conectado con exito oyendo por el puero"+ PORT);
 });
 
 
@@ -45,7 +45,7 @@ app.get('/epocas', (req, res) => {
 
   // Obtener todos los registros de la tabla generos
 app.get('/generos', (req, res) => {
-  const sql = 'SELECT * FROM generos';
+  const sql = 'SELECT * FROM genero';
   db.query(sql, (err, result) => {
     if (err) {
       res.status(500).send('Error al obtener registros de la base de datos');
@@ -57,7 +57,7 @@ app.get('/generos', (req, res) => {
 
 // Obtener todos los registros de la tabla musicos
 app.get('/musicos', (req, res) => {
-  const sql = 'SELECT * FROM musicos';
+  const sql = 'SELECT * FROM musico';
   db.query(sql, (err, result) => {
     if (err) {
       res.status(500).send('Error al obtener registros de la base de datos');
@@ -69,7 +69,7 @@ app.get('/musicos', (req, res) => {
 
 // Obtener todos los registros de la tabla instrumentos
 app.get('/instrumentos', (req, res) => {
-  const sql = 'SELECT * FROM instrumentos';
+  const sql = 'SELECT * FROM instrumento';
   db.query(sql, (err, result) => {
     if (err) {
       res.status(500).send('Error al obtener registros de la base de datos');
@@ -81,7 +81,7 @@ app.get('/instrumentos', (req, res) => {
 
 // Obtener todos los registros de la tabla obras
 app.get('/obras', (req, res) => {
-  const sql = 'SELECT * FROM obras';
+  const sql = 'SELECT * FROM obra_famosa';
   db.query(sql, (err, result) => {
     if (err) {
       res.status(500).send('Error al obtener registros de la base de datos');
